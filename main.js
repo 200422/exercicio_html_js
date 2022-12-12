@@ -1,19 +1,17 @@
-const form = document.getElementsByClassName('forms');
+const form = document.getElementById('forms')
+
+form.addEventListener('submit', function(e){
+    e.preventDefalt();
+
+})
 
 
-
-
-const validar = function(valor){
+const validar = function(valor) {
     const validadoArray = parserInt(valor)
     return messageValid
 
 }
 
-
-form.addEventListener('submit', function(e){
-var evento = e.preventDefalt();
-
-})
 
 
 
