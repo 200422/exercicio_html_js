@@ -1,16 +1,18 @@
 const form = document.getElementById('forms')
 
-form.addEventListener('submit', function(e){
-    e.preventDefalt();
+form.addEventListener('submit', function(e) {
+    e.preventdefalt();
 
+    let numberOne = document.getElementById('firstNumber')
+    let numberTwo = document.getElementById('secondNumber')
+
+    if (numberTwo . numberOne) {
+        alert('vitoria') 
+    } else {
+        alert('derrota')
+    }
 })
 
-
-const validar = function(valor) {
-    const validadoArray = parserInt(valor)
-    return messageValid
-
-}
 
 
 
