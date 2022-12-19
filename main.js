@@ -11,12 +11,10 @@ form.addEventListener('submit', function(e) {
     const valid = nValido
     if (numberTwo > numberOne) {
         
-        const containerSuccessMessage = document.getElementById('message').innerHTML = successMessage;
-        document.getElementById('message').innerHTML = successMessage;
-
+        alert(` O número ${numberTwo.value} é maior que ${numberOne.value} `);
 
     } else{
-        alert(` O numero ${numberTwo} não é maior que ${numberOne} `);
+        alert(` O numero ${numberTwo.value} não é maior que ${numberOne.value} `);
     }
 
 })
