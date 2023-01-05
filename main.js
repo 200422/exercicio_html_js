@@ -1,20 +1,21 @@
 const form = document.getElementById('forms')
 
 form.addEventListener('submit', function(e) {
-    var nValido = false
+    
     e.preventDefault();
 
     let numberOne = document.getElementById('firstNumber');
     let numberTwo = document.getElementById('secondNumber');
-    let successMessage = `O número ${numberTwo} é maior que ${numberOne}`
+    let successMessage = `O número ${numberTwo.value} é maior que ${numberOne.value}`
 
-    const valid = nValido
-    if (numberTwo > numberOne) {
+    
+    if (numberTwo.value > numberOne.value) {
         
-        alert(` O número ${numberTwo.value} é maior que ${numberOne.value} `);
+        alert(successMessage)
 
-    } else{
-        alert(` O numero ${numberTwo.value} não é maior que ${numberOne.value} `);
+    } else {
+    
+        alert('não é possivel validar')
     }
 
 })
